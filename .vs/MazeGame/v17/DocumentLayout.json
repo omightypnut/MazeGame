@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Josh\\MazeGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\scripts\\seekeragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\seekeragent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\scripts\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fieldofview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\scripts\\mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mazegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\scripts\\visioncone2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\visioncone2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\fogofwarcircle.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\fogofwarcircle.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|c:\\users\\josh\\mazegame\\assets\\scripts\\fogofwarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fogofwarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|c:\\users\\josh\\mazegame\\assets\\scripts\\fogofwarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fogofwarui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|C:\\Users\\Josh\\MazeGame\\assets\\scripts\\difficultytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A21DA567-4D02-FAFA-3719-CDAEF370184D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\difficultytracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FogOfWarUI.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\FogOfWarUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FogOfWarUI.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\FogOfWarUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FogOfWarUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T17:01:01.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FogOfWarController.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\FogOfWarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FogOfWarController.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\FogOfWarController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FogOfWarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T16:32:32.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FogOfWarCircle.shader",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\FogOfWarCircle.shader",
+              "RelativeDocumentMoniker": "Assets\\FogOfWarCircle.shader",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\FogOfWarCircle.shader",
+              "RelativeToolTip": "Assets\\FogOfWarCircle.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-03-18T16:28:48.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VisionCone2D.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\VisionCone2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\VisionCone2D.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\VisionCone2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\VisionCone2D.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T13:19:50.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MazeGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\MazeGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MazeGenerator.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\MazeGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MazeGenerator.cs",
+              "ViewState": "AgIAAKEBAAAAAAAAAAAAAHYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T16:05:45.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FieldOfView.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\FieldOfView.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FieldOfView.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\FieldOfView.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FieldOfView.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAGYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T15:06:43.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeekerAgent.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\SeekerAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SeekerAgent.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\SeekerAgent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SeekerAgent.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T14:56:05.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DifficultyTracker.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\DifficultyTracker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DifficultyTracker.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\DifficultyTracker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DifficultyTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T14:55:29.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Josh\\MazeGame\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T13:26:39.238Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
