@@ -33,7 +33,6 @@ public class SeekerAgent : Agent
     [SerializeField] private float hoverPenaltyInterval = 0.5f;
     [SerializeField] private float hoverPenalty = -0.01f;
 
-
     [Header("Rewards")]
     [SerializeField] private float stepPenalty = -0.0002f;
     [SerializeField] private float idlePenalty = -0.0005f;
@@ -43,9 +42,13 @@ public class SeekerAgent : Agent
     [SerializeField] private float pursueLastSeenReward = 0.003f;
     [SerializeField] private float stuckPenalty = -0.005f;
 
-    [Header("Search Timeout")] // added this due to 13_4 issue with opponent getting stuck against outer wall for full episode.
+    [Header("Search Timeout")]
     [SerializeField] private float maxTimeWithoutSeeingPlayer = 8f;
     [SerializeField] private float noSightPenalty = -0.05f;
+
+    [Header("Adaptive Difficulty")]
+    [SerializeField] private float easyMoveSpeed = 2f;
+    [SerializeField] private float hardMoveSpeed = 4f;
 
     private Rigidbody2D rb;
 
@@ -140,7 +143,16 @@ public class SeekerAgent : Agent
         float moveY = Mathf.Clamp(actions.ContinuousActions[1], -1f, 1f);
 
         Vector2 move = new Vector2(moveX, moveY);
-        rb.linearVelocity = move * moveSpeed;
+        bool seesPlayer = fov != null && fov.IsTarget;
+
+        float adaptiveSpeed = moveSpeed;
+
+        if (DifficultyTracker.Instance != null)
+        {
+            adaptiveSpeed = Mathf.Lerp(easyMoveSpeed, hardMoveSpeed, DifficultyTracker.Instance.difficultyScore);
+        }
+
+        rb.linearVelocity = move * adaptiveSpeed;
 
         if (move.sqrMagnitude > 0.01f)
         {
@@ -150,21 +162,27 @@ public class SeekerAgent : Agent
 
         AddReward(stepPenalty);
 
-        bool seesPlayer = fov != null && fov.IsTarget;
-
         if (seesPlayer)
         {
             timeSinceSeen = 0f;
             hadSeenPlayerThisEpisode = true;
             lastSeenPlayerPos = player.position;
 
-            // Reward only when the player is newly spotted
             if (!sawPlayerLastStep)
+            {
                 AddReward(seenReward);
+
+                if (RoundManager.Instance != null)
+                    RoundManager.Instance.RegisterSpotted();
+            }
 
             float distanceToPlayer = Vector2.Distance(rb.position, player.position);
             if (distanceToPlayer <= catchDistance)
             {
+                if (RoundManager.Instance != null)
+                    RoundManager.Instance.RegisterCaught();
+                    RoundManager.Instance.LoseLife();
+
                 AddReward(catchReward);
                 EndEpisode();
                 return;
@@ -192,7 +210,6 @@ public class SeekerAgent : Agent
         if (rb.linearVelocity.magnitude < 0.05f)
             AddReward(idlePenalty);
 
-        // Only run these during ML training, not normal gameplay
         if (Academy.Instance.IsCommunicatorOn)
         {
             UpdateHoverPenalty();

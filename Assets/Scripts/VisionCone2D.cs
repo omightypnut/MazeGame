@@ -12,11 +12,24 @@ public class VisionCone2D : MonoBehaviour
     [SerializeField] private Vector2 localForward = Vector2.right;
     [SerializeField] private float visionAngleOffset = 0f;
 
+    [Header("Adaptive Difficulty")]
+    [SerializeField] private float easyViewRadius = 2.5f;
+    [SerializeField] private float hardViewRadius = 5f;
+    [SerializeField] private float easyViewAngle = 60f;
+    [SerializeField] private float hardViewAngle = 110f;
+
     public bool IsTarget { get; private set; }
     public Transform visibleTarget { get; private set; }
 
     private void Update()
     {
+        if (DifficultyTracker.Instance != null)
+        {
+            float d = DifficultyTracker.Instance.difficultyScore;
+            viewRadius = Mathf.Lerp(easyViewRadius, hardViewRadius, d);
+            viewAngle = Mathf.Lerp(easyViewAngle, hardViewAngle, d);
+        }
+
         FindVisibleTarget();
     }
 

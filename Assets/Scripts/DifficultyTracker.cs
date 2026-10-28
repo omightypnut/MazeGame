@@ -1,49 +1,39 @@
 using UnityEngine;
 
-[System.Serializable]
-public class PlayerSessionData
-{
-    public float timeHidden;
-    public int timesFound;
-    public int timesEscaped;
-}
-
 public class DifficultyTracker : MonoBehaviour
 {
     public static DifficultyTracker Instance;
 
-    public PlayerSessionData session = new PlayerSessionData();
-    public float difficultyScore = 0.5f;
+    [Range(0f, 1f)]
+    public float difficultyScore = 0.3f;
 
-    private float trackTimer = 0f;
-    public float updateInterval = 10f;
+    [Header("Difficulty Limits")]
+    [SerializeField] private float minDifficulty = 0.1f;
+    [SerializeField] private float maxDifficulty = 1f;
 
-    void Awake() => Instance = this;
+    [Header("Smoothing")]
+    [SerializeField] private float smoothing = 0.35f;
 
-    void Update()
+    private void Awake()
     {
-        session.timeHidden += Time.deltaTime;
-
-        trackTimer += Time.deltaTime;
-        if (trackTimer >= updateInterval)
-        {
-            RecalculateDifficulty();
-            trackTimer = 0f;
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
-    public void PlayerWasFound() => session.timesFound++;
-    public void PlayerEscaped() => session.timesEscaped++;
-
-    void RecalculateDifficulty()
+    public void UpdateDifficulty(int roundsSurvived, int itemsCollected, int timesCaught, int timesSpotted, float roundLength)
     {
-        float escapeRatio = session.timesEscaped /
-            Mathf.Max(1, session.timesFound + session.timesEscaped);
+        float itemScore = itemsCollected * 0.15f;
+        float surviveScore = 0.2f;
+        float caughtPenalty = timesCaught * 0.25f;
+        float spottedPenalty = timesSpotted * 0.025f;
 
-        difficultyScore = Mathf.Clamp01(
-            difficultyScore + (escapeRatio > 0.6f ? 0.1f : -0.1f)
-        );
+        float rawScore = itemScore + surviveScore - caughtPenalty - spottedPenalty;
 
-        Debug.Log($"Difficulty: {difficultyScore}");
+        float targetDifficulty = Mathf.Clamp01(0.5f + rawScore);
+        targetDifficulty = Mathf.Clamp(targetDifficulty, minDifficulty, maxDifficulty);
+
+        difficultyScore = Mathf.Lerp(difficultyScore, targetDifficulty, smoothing);
+
+        Debug.Log($"Difficulty updated. Items: {itemsCollected}, Caught: {timesCaught}, Spotted: {timesSpotted}, New Difficulty: {difficultyScore:F2}");
     }
 }
